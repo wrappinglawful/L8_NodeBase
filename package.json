@@ -1,0 +1,23 @@
+{
+  "name": "l8-node-base",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №8 — основы Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env ENV_FILE=.env.development nodemon index.js",
+    "build": "cross-env ENV_FILE=.env.production node index.js",
+    "deploy": "cross-env ENV_FILE=.env.domain node index.js",
+    "use": "cross-env ENV_FILE=.env.development node use.js"
+  },
+  "keywords": ["nodejs", "lab", "dotenv", "bcrypt"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.11"
+  }
+}
